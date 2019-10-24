@@ -69,4 +69,11 @@ class User extends Authenticatable
     public function Adress(){
         return $this->hasOne(Adress::class);
     }
+    public function formations(){
+        return $this->hasMany(Formation::class);
+    }
+    public function researchProjects(){
+        return $this->hasMany(Researchproject::class);
+    }
+
 }

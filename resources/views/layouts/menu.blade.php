@@ -33,3 +33,27 @@
     <a href="{!! route('formations.index') !!}"><i class="fa fa-edit"></i><span>Formations</span></a>
 </li>
 
+
+
+
+<li class="{{ Request::is('researchprojects*') ? 'active' : '' }}">
+    <a href="{!! route('researchprojects.index') !!}"><i class="fa fa-edit"></i><span>Researchprojects</span></a>
+</li>
+
+
+
+<li class="{{ Request::is('posttypes*') ? 'active' : '' }}">
+    <a href="{!! route('posttypes.index') !!}"><i class="fa fa-edit"></i><span>Posttypes</span></a>
+</li>
+
+
+
+
+
+
+
+
+<li class="{{ Request::is('administrativetasks*') ? 'active' : '' }}">
+    <a href="{!! route('administrativetasks.index') !!}"><i class="fa fa-edit"></i><span>Administrativetasks</span></a>
+</li>
+

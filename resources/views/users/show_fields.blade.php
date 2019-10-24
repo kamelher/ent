@@ -62,10 +62,33 @@
 <!-- Interstings Id Field -->
 <div class="form-group">
     <div class="card col-6">
-        <h6 class="text-capitalize text-black-50 text-danger"> Departments</h6>
+        <h6 class="text-capitalize text-black-50 text-danger"> Domain de Recherche</h6>
         <ul>
             @foreach($user->interstings as $intersting)
                 <li>{{$intersting->name}}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>
+
+<!-- Formation Id Field -->
+<div class="form-group">
+    <div class="card col-6">
+        <h6 class="text-capitalize text-black-50 text-danger"> Formation</h6>
+        <ul>
+            @foreach($user->formations as $formation)
+                <li>{{$formation->title}}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>
+<!-- Research Projects Id Field -->
+<div class="form-group">
+    <div class="card col-6">
+        <h6 class="text-capitalize text-black-50 text-danger"> Research Projects</h6>
+        <ul>
+            @foreach($user->researchProjects as $researchProject)
+                <li>{{$researchProject->title}}</li>
             @endforeach
         </ul>
     </div>

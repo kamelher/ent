@@ -90,3 +90,33 @@ Route::resource('adresses', 'AdressController');
 
 
 Route::resource('formations', 'FormationController');
+
+
+
+
+
+
+
+Route::resource('researchprojects', 'ResearchprojectController');
+
+
+
+
+
+Route::resource('posttypes', 'PosttypeController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::resource('administrativetasks', 'AdministrativetaskController');

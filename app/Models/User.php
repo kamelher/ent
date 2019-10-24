@@ -82,6 +82,9 @@ class User extends Model
     public function interstings(){
         return $this->hasMany(Intersting::class);
     }
+    public function formations(){
+        return $this->hasMany(Formation::class);
+    }
 
 
 }
