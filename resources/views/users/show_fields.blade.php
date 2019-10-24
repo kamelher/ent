@@ -40,6 +40,12 @@
     <p>{!! $user->phone !!}</p>
 </div>
 
+<!-- Photo Field -->
+<div class="form-group">
+    {!! Form::label('Photo', 'Photo:') !!}
+    <p>{!! $user->Photo !!}</p>
+</div>
+
 <!-- Departement Id Field -->
 <div class="form-group">
     {!! Form::label('departement_id', 'Departement Id:') !!}

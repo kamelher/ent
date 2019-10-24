@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class User
  * @package App\Models
- * @version October 24, 2019, 12:28 pm UTC
+ * @version October 24, 2019, 1:05 pm UTC
  *
  * @property string firstname
  * @property string lastname
@@ -65,6 +65,7 @@ class User extends Model
         'email_verified_at' => 'datetime',
         'password' => 'string',
         'remember_token' => 'string',
+        'Photo' => 'string',
         'departement_id' => 'integer'
     ];
 

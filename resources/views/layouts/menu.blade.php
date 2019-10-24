@@ -10,3 +10,4 @@
 <li class="{{ Request::is('departements*') ? 'active' : '' }}">
     <a href="{!! route('departements.index') !!}"><i class="fa fa-edit"></i><span>Departements</span></a>
 </li>
+

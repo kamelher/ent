@@ -144,6 +144,18 @@
         "inView": false
     },
     {
+        "name": "Photo",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
         "name": "departement_id",
         "dbType": "integer:unsigned:foreign,departements,id",
         "htmlType": "selectTable:departements:name,id",

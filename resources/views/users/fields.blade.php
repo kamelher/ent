@@ -42,6 +42,12 @@
     {!! Form::text('phone', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Photo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('Photo', 'Photo:') !!}
+    {!! Form::text('Photo', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Departement Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('departement_id', 'Departement Id:') !!}

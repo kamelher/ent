@@ -51,4 +51,14 @@ Route::resource('departements', 'DepartementController');
 
 
 
+
+
+
+
+
+
+
+
+
+
 Route::resource('users', 'UserController');

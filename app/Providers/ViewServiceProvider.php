@@ -70,6 +70,26 @@ class ViewServiceProvider extends ServiceProvider
             $departementItems = Departement::pluck('name','id')->toArray();
             $view->with('departementItems', $departementItems);
         });
+        View::composer(['users.fields'], function ($view) {
+            $departementItems = Departement::pluck('name','id')->toArray();
+            $view->with('departementItems', $departementItems);
+        });
+        View::composer(['users.fields'], function ($view) {
+            $departementItems = Departement::pluck('name','id')->toArray();
+            $view->with('departementItems', $departementItems);
+        });
+        View::composer(['users.fields'], function ($view) {
+            $departementItems = Departement::pluck('name','id')->toArray();
+            $view->with('departementItems', $departementItems);
+        });
+        View::composer(['users.fields'], function ($view) {
+            $departementItems = Departement::pluck('name','id')->toArray();
+            $view->with('departementItems', $departementItems);
+        });
+        View::composer(['users.fields'], function ($view) {
+            $departementItems = Departement::pluck('name','id')->toArray();
+            $view->with('departementItems', $departementItems);
+        });
         View::composer(['departements.fields'], function ($view) {
             $facultyItems = Faculty::pluck('name','id')->toArray();
             $view->with('facultyItems', $facultyItems);
