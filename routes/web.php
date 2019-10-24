@@ -62,3 +62,17 @@ Route::resource('departements', 'DepartementController');
 
 
 Route::resource('users', 'UserController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::resource('interstings', 'InterstingController');

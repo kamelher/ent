@@ -18,7 +18,7 @@
                 <td>{!! $user->firstname !!}</td>
                 <td>{!! $user->lastname !!}</td>
                 <td>{!! $user->email !!}</td>
-                <td>{!! $user->departement_id !!}</td>
+                <td>{!! $user->Departement->name !!}</td>
                 <td>
                     {!! Form::open(['route' => ['users.destroy', $user->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

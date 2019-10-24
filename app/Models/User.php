@@ -27,25 +27,13 @@ class User extends Model
     use SoftDeletes;
 
     public $table = 'users';
-    
+
 
     protected $dates = ['deleted_at'];
 
 
 
-    public $fillable = [
-        'firstname',
-        'lastname',
-        'email',
-        'birthdate',
-        'placeOfbirth',
-        'wilaya',
-        'phone',
-        'email_verified_at',
-        'password',
-        'remember_token',
-        'departement_id'
-    ];
+    public $guarded = [    ];
 
     /**
      * The attributes that should be casted to native types.
@@ -83,8 +71,17 @@ class User extends Model
         'wilaya' => 'required',
         'phone' => 'required',
         'googleID' => 'required',
-        'password' => 'required'
+
     ];
 
-    
+
+     public function Departement(){
+        return $this->belongsTo(Departement::class);
+    }
+
+    public function interstings(){
+        return $this->hasMany(Intersting::class);
+    }
+
+
 }

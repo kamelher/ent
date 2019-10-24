@@ -63,4 +63,7 @@ class User extends Authenticatable
     public function Departement(){
         return $this->belongsTo(Departement::class);
     }
+    public function interstings(){
+        return $this->hasMany(Intersting::class);
+    }
 }

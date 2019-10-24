@@ -49,6 +49,17 @@
 <!-- Departement Id Field -->
 <div class="form-group">
     {!! Form::label('departement_id', 'Departement Id:') !!}
-    <p>{!! $user->departement_id !!}</p>
+    <p>{!! $user->Departement->name !!}</p>
 </div>
 
+<!-- Interstings Id Field -->
+<div class="form-group">
+    <div class="card col-6">
+        <h6 class="text-capitalize text-black-50 text-danger"> Departments</h6>
+        <ul>
+            @foreach($user->interstings as $intersting)
+                <li>{{$intersting->name}}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use App\Models\User;
 use App\Models\Departement;
 use App\Models\Faculty;
 
@@ -26,6 +27,34 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['interstings.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['interstings.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['interstings.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['reseachdomains.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['reseach_domains.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['reseach_domains.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['reseach_domains.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
         View::composer(['users.fields'], function ($view) {
             $departementItems = Departement::pluck('name','id')->toArray();
             $view->with('departementItems', $departementItems);
