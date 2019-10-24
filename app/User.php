@@ -66,4 +66,7 @@ class User extends Authenticatable
     public function interstings(){
         return $this->hasMany(Intersting::class);
     }
+    public function Adress(){
+        return $this->hasOne(Adress::class);
+    }
 }

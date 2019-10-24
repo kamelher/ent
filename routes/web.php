@@ -76,3 +76,17 @@ Route::resource('users', 'UserController');
 
 
 Route::resource('interstings', 'InterstingController');
+
+
+
+
+
+Route::resource('adresses', 'AdressController');
+
+
+
+
+
+
+
+Route::resource('formations', 'FormationController');

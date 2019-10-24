@@ -50,8 +50,15 @@
 <div class="form-group">
     {!! Form::label('departement_id', 'Departement Id:') !!}
     <p>{!! $user->Departement->name !!}</p>
+
 </div>
 
+<!-- Adress Field -->
+<div class="form-group">
+    {!! Form::label('departement_id', 'Departement Id:') !!}
+    <p>{!! $user->Adress->adress !!}</p>
+
+</div>
 <!-- Interstings Id Field -->
 <div class="form-group">
     <div class="card col-6">

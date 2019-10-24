@@ -27,6 +27,34 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['formations.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['formations.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['formations.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['formations.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['adresses.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['adresses.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['adresses.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
         View::composer(['interstings.fields'], function ($view) {
             $userItems = User::pluck('firstname','id')->toArray();
             $view->with('userItems', $userItems);

@@ -20,3 +20,16 @@
     <a href="{!! route('interstings.index') !!}"><i class="fa fa-edit"></i><span>Interstings</span></a>
 </li>
 
+
+
+<li class="{{ Request::is('adresses*') ? 'active' : '' }}">
+    <a href="{!! route('adresses.index') !!}"><i class="fa fa-edit"></i><span>Adresses</span></a>
+</li>
+
+
+
+
+<li class="{{ Request::is('formations*') ? 'active' : '' }}">
+    <a href="{!! route('formations.index') !!}"><i class="fa fa-edit"></i><span>Formations</span></a>
+</li>
+
