@@ -60,6 +60,9 @@ class User extends Authenticatable
         'email' => 'required',
     ];
 
+    public function userInformartionCollection(){
+        //TODO implement method
+    }
     public function Departement(){
         return $this->belongsTo(Departement::class);
     }
