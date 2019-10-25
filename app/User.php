@@ -75,5 +75,8 @@ class User extends Authenticatable
     public function researchProjects(){
         return $this->hasMany(Researchproject::class);
     }
+    public function supervising(){
+        return $this->hasMany(Student::class);
+    }
 
 }

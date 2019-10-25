@@ -20,14 +20,23 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function (){
     Route::get('/home', 'HomeController@index');
     Route::resource('faculties', 'FacultyController');
-}
+    Route::resource('departements', 'DepartementController');
+    Route::resource('users', 'UserController');
+    Route::resource('interstings', 'InterstingController');
+    Route::resource('adresses', 'AdressController');
+    Route::resource('formations', 'FormationController');
+    Route::resource('researchprojects', 'ResearchprojectController');
+    Route::resource('posttypes', 'PosttypeController');
+    Route::resource('administrativetasks', 'AdministrativetaskController');
+    
+    Route::resource('typeencarements', 'TypeencarementController');
 
+}
 );
 
 
 
 
-Route::resource('departements', 'DepartementController');
 
 
 
@@ -38,85 +47,4 @@ Route::resource('departements', 'DepartementController');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('users', 'UserController');
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('interstings', 'InterstingController');
-
-
-
-
-
-Route::resource('adresses', 'AdressController');
-
-
-
-
-
-
-
-Route::resource('formations', 'FormationController');
-
-
-
-
-
-
-
-Route::resource('researchprojects', 'ResearchprojectController');
-
-
-
-
-
-Route::resource('posttypes', 'PosttypeController');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('administrativetasks', 'AdministrativetaskController');
+Route::resource('students', 'StudentController');

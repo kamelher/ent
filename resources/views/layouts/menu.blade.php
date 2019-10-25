@@ -57,3 +57,16 @@
     <a href="{!! route('administrativetasks.index') !!}"><i class="fa fa-edit"></i><span>Administrativetasks</span></a>
 </li>
 
+
+
+
+
+<li class="{{ Request::is('typeencarements*') ? 'active' : '' }}">
+    <a href="{!! route('typeencarements.index') !!}"><i class="fa fa-edit"></i><span>Typeencarements</span></a>
+</li>
+
+
+<li class="{{ Request::is('students*') ? 'active' : '' }}">
+    <a href="{!! route('students.index') !!}"><i class="fa fa-edit"></i><span>Students</span></a>
+</li>
+

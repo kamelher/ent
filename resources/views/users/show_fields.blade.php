@@ -93,3 +93,14 @@
         </ul>
     </div>
 </div>
+<!-- Encadrement Id Field -->
+<div class="form-group">
+    <div class="card col-6">
+        <h6 class="text-capitalize text-black-50 text-danger"> Encadrement</h6>
+        <ul>
+            @foreach($user->supervising as $student)
+                <li>{{$student->firststudent}}</li>
+            @endforeach
+        </ul>
+    </div>
+</div>

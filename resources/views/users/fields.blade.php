@@ -20,6 +20,7 @@
 <div class="form-group col-sm-6">
     {!! Form::label('birthdate', 'Birthdate:') !!}
     {!! Form::date('birthdate', null, ['class' => 'form-control','id'=>'birthdate']) !!}
+
 </div>
 
 

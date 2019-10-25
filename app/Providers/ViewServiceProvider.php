@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use App\Models\Typeencarement;
 use App\Models\Posttype;
 use App\Models\User;
 use App\Models\Departement;
@@ -28,6 +29,46 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['students.fields'], function ($view) {
+            $typeencarementItems = Typeencarement::pluck('name','id')->toArray();
+            $view->with('typeencarementItems', $typeencarementItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $typeencarementItems = Typeencarement::pluck('name','id')->toArray();
+            $view->with('typeencarementItems', $typeencarementItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $facultyItems = Faculty::pluck('name','id')->toArray();
+            $view->with('facultyItems', $facultyItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $facultyItems = Faculty::pluck('name','id')->toArray();
+            $view->with('facultyItems', $facultyItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $facultyItems = Faculty::pluck('name','id')->toArray();
+            $view->with('facultyItems', $facultyItems);
+        });
+        View::composer(['students.fields'], function ($view) {
+            $facultyItems = Faculty::pluck('name','id')->toArray();
+            $view->with('facultyItems', $facultyItems);
+        });
         View::composer(['administrativetasks.fields'], function ($view) {
             $posttypeItems = Posttype::pluck('postDescription','id')->toArray();
             $view->with('posttypeItems', $posttypeItems);
