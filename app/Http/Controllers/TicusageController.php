@@ -43,9 +43,7 @@ class TicusageController extends AppBaseController
      */
     public function create()
     {
-        $tictypeItems = Tictype::select('ticname','id')->get();
-        $tictypeItems = $tictypeItems->pluck('id','ticname');
-        dd($tictypeItems);
+       
         return view('ticusages.create',compact('tictypeItems'));
     }
 
