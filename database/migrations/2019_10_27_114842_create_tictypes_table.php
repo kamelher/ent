@@ -15,7 +15,7 @@ class CreateTictypesTable extends Migration
     {
         Schema::create('tictypes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ticname');
+            $table->string('name');
             $table->text('ticdescription');
             $table->timestamps();
             $table->softDeletes();

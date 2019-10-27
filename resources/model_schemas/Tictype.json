@@ -2,8 +2,8 @@
     {
         "name": "id",
         "dbType": "increments",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": true,
@@ -12,7 +12,7 @@
         "inView": false
     },
     {
-        "name": "ticname",
+        "name": "name",
         "dbType": "string",
         "htmlType": "text",
         "validations": "required|min:3",
@@ -23,7 +23,6 @@
         "inIndex": true,
         "inView": true
     },
-
     {
         "name": "ticdescription",
         "dbType": "text",
@@ -39,8 +38,8 @@
     {
         "name": "created_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,
@@ -51,8 +50,8 @@
     {
         "name": "updated_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,

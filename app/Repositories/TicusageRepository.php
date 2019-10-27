@@ -2,23 +2,23 @@
 
 namespace App\Repositories;
 
-use App\Models\Tictype;
+use App\Models\Ticusage;
 use App\Repositories\BaseRepository;
 
 /**
- * Class TictypeRepository
+ * Class TicusageRepository
  * @package App\Repositories
- * @version October 27, 2019, 11:48 am UTC
+ * @version October 27, 2019, 11:52 am UTC
 */
 
-class TictypeRepository extends BaseRepository
+class TicusageRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
-        'ticdescription'
+        'Title',
+        'user_id'
     ];
 
     /**
@@ -36,6 +36,6 @@ class TictypeRepository extends BaseRepository
      **/
     public function model()
     {
-        return Tictype::class;
+        return Ticusage::class;
     }
 }

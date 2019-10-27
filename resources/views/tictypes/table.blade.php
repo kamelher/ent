@@ -2,7 +2,7 @@
     <table class="table" id="tictypes-table">
         <thead>
             <tr>
-                <th>Ticname</th>
+                <th>Name</th>
         <th>Ticdescription</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -10,7 +10,7 @@
         <tbody>
         @foreach($tictypes as $tictype)
             <tr>
-                <td>{!! $tictype->ticname !!}</td>
+                <td>{!! $tictype->name !!}</td>
             <td>{!! $tictype->ticdescription !!}</td>
                 <td>
                     {!! Form::open(['route' => ['tictypes.destroy', $tictype->id], 'method' => 'delete']) !!}

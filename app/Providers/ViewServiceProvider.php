@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use App\Models\Tictype;
 use App\Models\Typeencarement;
 use App\Models\Posttype;
 use App\Models\User;
@@ -29,6 +30,70 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('ticname','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('ticname','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['tictypes.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['tictypes.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['ticusages.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
+        View::composer(['tictypes.fields'], function ($view) {
+            $tictypeItems = Tictype::pluck('name','id')->toArray();
+            $view->with('tictypeItems', $tictypeItems);
+        });
+        View::composer(['tictypes.fields'], function ($view) {
+            $userItems = User::pluck('firstname','id')->toArray();
+            $view->with('userItems', $userItems);
+        });
         View::composer(['students.fields'], function ($view) {
             $typeencarementItems = Typeencarement::pluck('name','id')->toArray();
             $view->with('typeencarementItems', $typeencarementItems);

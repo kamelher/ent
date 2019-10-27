@@ -1,7 +1,7 @@
-<!-- Ticname Field -->
+<!-- Name Field -->
 <div class="form-group">
-    {!! Form::label('ticname', 'Ticname:') !!}
-    <p>{!! $tictype->ticname !!}</p>
+    {!! Form::label('name', 'Name:') !!}
+    <p>{!! $tictype->name !!}</p>
 </div>
 
 <!-- Ticdescription Field -->

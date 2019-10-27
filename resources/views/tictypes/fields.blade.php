@@ -1,7 +1,7 @@
-<!-- Ticname Field -->
+<!-- Name Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('ticname', 'Ticname:') !!}
-    {!! Form::text('ticname', null, ['class' => 'form-control','minlength' => 3]) !!}
+    {!! Form::label('name', 'Name:') !!}
+    {!! Form::text('name', null, ['class' => 'form-control','minlength' => 3]) !!}
 </div>
 
 <!-- Ticdescription Field -->

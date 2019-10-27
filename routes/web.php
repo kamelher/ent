@@ -53,4 +53,30 @@ Route::resource('students', 'StudentController');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::resource('tictypes', 'TictypeController');
+
+
+
+Route::resource('ticusages', 'TicusageController');

@@ -72,7 +72,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 <li class="{{ Request::is('tictypes*') ? 'active' : '' }}">
     <a href="{!! route('tictypes.index') !!}"><i class="fa fa-edit"></i><span>Tictypes</span></a>
+</li>
+
+
+<li class="{{ Request::is('ticusages*') ? 'active' : '' }}">
+    <a href="{!! route('ticusages.index') !!}"><i class="fa fa-edit"></i><span>Ticusages</span></a>
 </li>
 

@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Tictype
  * @package App\Models
- * @version October 27, 2019, 11:14 am UTC
+ * @version October 27, 2019, 11:48 am UTC
  *
- * @property string ticname
+ * @property string name
  * @property string ticdescription
  */
 class Tictype extends Model
@@ -25,7 +25,7 @@ class Tictype extends Model
 
 
     public $fillable = [
-        'ticname',
+        'name',
         'ticdescription'
     ];
 
@@ -36,7 +36,7 @@ class Tictype extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'ticname' => 'string',
+        'name' => 'string',
         'ticdescription' => 'string'
     ];
 
@@ -46,7 +46,7 @@ class Tictype extends Model
      * @var array
      */
     public static $rules = [
-        'ticname' => 'required|min:3',
+        'name' => 'required|min:3',
         'ticdescription' => 'required|min:20'
     ];
 
