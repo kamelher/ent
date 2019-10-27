@@ -70,3 +70,9 @@
     <a href="{!! route('students.index') !!}"><i class="fa fa-edit"></i><span>Students</span></a>
 </li>
 
+
+
+<li class="{{ Request::is('tictypes*') ? 'active' : '' }}">
+    <a href="{!! route('tictypes.index') !!}"><i class="fa fa-edit"></i><span>Tictypes</span></a>
+</li>
+

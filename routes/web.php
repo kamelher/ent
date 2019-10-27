@@ -48,3 +48,9 @@ Route::group(['middleware' => ['auth']], function (){
 
 
 Route::resource('students', 'StudentController');
+
+
+
+
+
+Route::resource('tictypes', 'TictypeController');
