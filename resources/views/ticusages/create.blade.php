@@ -15,6 +15,7 @@
                     {!! Form::open(['route' => 'ticusages.store']) !!}
                         <div class="col">
                           <div class="row">
+                      
                             @include('ticusages.fields')
                             </div>
                         </div>

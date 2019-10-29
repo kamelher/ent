@@ -43,8 +43,7 @@ class TicusageController extends AppBaseController
      */
     public function create()
     {
-       
-        return view('ticusages.create',compact('tictypeItems'));
+       return view('ticusages.create');
     }
 
     /**

@@ -30,53 +30,8 @@ Route::group(['middleware' => ['auth']], function (){
     Route::resource('administrativetasks', 'AdministrativetaskController');
     
     Route::resource('typeencarements', 'TypeencarementController');
-
+    Route::resource('students', 'StudentController');
+    Route::resource('tictypes', 'TictypeController');
+    Route::resource('ticusages', 'TicusageController');
 }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('students', 'StudentController');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::resource('tictypes', 'TictypeController');
-
-
-
-Route::resource('ticusages', 'TicusageController');
